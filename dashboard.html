@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NeighborRent – Dhaka Rental & Resale Platform</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<nav class="topbar">
+  <a href="neighborrent.html" class="logo">
+    <div class="logo-icon">
+      <svg viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+    </div>
+    <span class="logo-text">Neighbor<span>Rent</span></span>
+  </a>
+  <div class="nav-links" id="nav-public">
+    <a href="browse.html" class="nav-link">Browse</a>
+    <a href="trending.html" class="nav-link">Trending 🌿</a>
+    <a href="#" class="nav-link">How it Works</a>
+  </div>
+  <div class="nav-right" id="nav-right-public">
+    <a href="signin.html" class="btn btn-outline btn-sm">Sign In</a>
+    <a href="signup.html" class="btn btn-primary btn-sm">Sign Up</a>
+  </div>
+</nav>
+<div id="page-dashboard" class="page-section active">
+  <div class="dashboard-layout">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-user">
+        <div class="u-avatar">CS</div>
+        <div class="u-name">cseshamim</div>
+        <div class="u-block">📍 Dhanmondi Block 4</div>
+      </div>
+      <nav class="sidebar-nav">
+        <a href="#" class="active" ><span class="icon">🏠</span> Home</a>
+        <a href="browse.html"><span class="icon">🔍</span> Browse Items</a>
+        <a href="my-items.html"><span class="icon">📋</span> My Items</a>
+        <a href="my-rentals.html"><span class="icon">📂</span> My Rentals</a>
+        <a href="messages.html"><span class="icon">💬</span> Messages <span class="u-inline-036">3</span></a>
+        <a href="trending.html"><span class="icon">🌿</span> Trending</a>
+        <div class="u-inline-037"></div>
+        <a href="#"><span class="icon">👤</span> View Profile</a>
+        <a href="#"><span class="icon">✏️</span> Edit Profile</a>
+        <a href="#"><span class="icon">🔑</span> Change Password</a>
+        <a href="neighborrent.html" class="logout"><span class="icon">🚪</span> Logout</a>
+      </nav>
+    </aside>
+
+    <!-- Main -->
+    <main class="dash-main">
+      <div class="dash-welcome">Good morning, cseshamim! 👋</div>
+      <div class="dash-sub">Here's what's happening with your listings today.</div>
+
+      <div class="stat-grid">
+        <div class="stat-card accent">
+          <div class="stat-label">My Active Listings</div>
+          <div class="stat-num">7</div>
+          <div class="stat-sub">↑ 2 this week</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">Active Rentals</div>
+          <div class="stat-num">3</div>
+          <div class="stat-sub u-inline-038">2 pending</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">Unread Messages</div>
+          <div class="stat-num">5</div>
+          <div class="stat-sub u-inline-039">New messages</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">Total Earned</div>
+          <div class="stat-num">৳4,200</div>
+          <div class="stat-sub">This month</div>
+        </div>
+      </div>
+
+      <div class="dash-grid">
+        <!-- Recent Activity -->
+        <div class="dash-card">
+          <div class="section-title">Recent Activity</div>
+          <div class="activity-item">
+            <div class="activity-dot green"></div>
+            <div>
+              <div class="activity-text">Rental request approved for <strong>Bosch Drill</strong></div>
+              <div class="activity-time">2 hours ago</div>
+            </div>
+          </div>
+          <div class="activity-item">
+            <div class="activity-dot amber"></div>
+            <div>
+              <div class="activity-text">New message from <strong>Karim Hassan</strong> about Camera</div>
+              <div class="activity-time">5 hours ago</div>
+            </div>
+          </div>
+          <div class="activity-item">
+            <div class="activity-dot green"></div>
+            <div>
+              <div class="activity-text">Projector rental completed — <strong>leave a review!</strong></div>
+              <div class="activity-time">Yesterday</div>
+            </div>
+          </div>
+          <div class="activity-item">
+            <div class="activity-dot coral"></div>
+            <div>
+              <div class="activity-text">Rental cancelled for <strong>Electric Saw</strong> by Nadia</div>
+              <div class="activity-time">2 days ago</div>
+            </div>
+          </div>
+          <div class="activity-item">
+            <div class="activity-dot green"></div>
+            <div>
+              <div class="activity-text">New item <strong>Sony Camera</strong> listed successfully</div>
+              <div class="activity-time">3 days ago</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="dash-card">
+          <div class="section-title">Quick Actions</div>
+          <div class="u-inline-040">
+            <button class="btn btn-primary u-inline-041" onclick="location.href='add-listing.html'">➕ Add Listing</button>
+            <button class="btn btn-outline u-inline-041" onclick="location.href='browse.html'">🔍 Browse Items</button>
+            <button class="btn btn-outline u-inline-041" onclick="location.href='messages.html'">💬 Messages</button>
+            <button class="btn btn-outline u-inline-041" onclick="location.href='my-rentals.html'">📂 My Rentals</button>
+          </div>
+          <div class="section-title u-inline-042">My Block</div>
+          <div class="u-inline-043">
+            <div class="u-inline-044">📍 Dhanmondi Block 4</div>
+            <div class="u-inline-045">Items within this block have free pickup!</div>
+            <div class="u-inline-046">18 items available near you</div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════
+     PAGE: MY ITEMS
+══════════════════════════════════════════ -->
+<script src="scripts.js"></script>
+</body>
+</html>

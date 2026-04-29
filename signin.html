@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NeighborRent – Dhaka Rental & Resale Platform</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<nav class="topbar">
+  <a href="neighborrent.html" class="logo">
+    <div class="logo-icon">
+      <svg viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+    </div>
+    <span class="logo-text">Neighbor<span>Rent</span></span>
+  </a>
+  <div class="nav-links" id="nav-public">
+    <a href="browse.html" class="nav-link">Browse</a>
+    <a href="trending.html" class="nav-link">Trending 🌿</a>
+    <a href="#" class="nav-link">How it Works</a>
+  </div>
+  <div class="nav-right" id="nav-right-public">
+    <a href="signin.html" class="btn btn-outline btn-sm">Sign In</a>
+    <a href="signup.html" class="btn btn-primary btn-sm">Sign Up</a>
+  </div>
+</nav>
+<div id="page-signin" class="page-section active">
+  <div class="auth-wrapper">
+    <div class="auth-card">
+      <div class="auth-logo">
+        <div class="logo-icon"><svg viewBox="0 0 24 24" width="20" height="20" fill="white"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg></div>
+        <span class="logo-text u-inline-029">Neighbor<span>Rent</span></span>
+      </div>
+      <div class="auth-title">Welcome Back</div>
+      <div class="auth-sub">Sign in to your NeighborRent account</div>
+      <div class="form-group">
+        <label class="form-label">Email Address</label>
+        <input class="form-input" type="email" placeholder="you@email.com">
+      </div>
+      <div class="form-group">
+        <label class="form-label">Password</label>
+        <input class="form-input" type="password" placeholder="Your password">
+      </div>
+      <div class="u-inline-030">
+        <label class="u-inline-031">
+          <input type="checkbox" class="u-inline-032"> Remember me
+        </label>
+        <a href="#" class="u-inline-033">Forgot password?</a>
+      </div>
+      <div id="login-error" class="alert-box u-inline-034"><span class="icon">⚠️</span> Email or password does not match!</div>
+      <button class="btn btn-primary btn-full" onclick="location.href='dashboard.html'">Sign In →</button>
+      <div class="auth-link u-inline-035">Don't have an account? <a href="signup.html">Sign up</a></div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════
+     PAGE: DASHBOARD
+══════════════════════════════════════════ -->
+<script src="scripts.js"></script>
+</body>
+</html>

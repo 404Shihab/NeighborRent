@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NeighborRent – Dhaka Rental & Resale Platform</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<nav class="topbar">
+  <a href="neighborrent.html" class="logo">
+    <div class="logo-icon">
+      <svg viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+    </div>
+    <span class="logo-text">Neighbor<span>Rent</span></span>
+  </a>
+  <div class="nav-links" id="nav-public">
+    <a href="browse.html" class="nav-link">Browse</a>
+    <a href="trending.html" class="nav-link">Trending 🌿</a>
+    <a href="#" class="nav-link">How it Works</a>
+  </div>
+  <div class="nav-right" id="nav-right-public">
+    <a href="signin.html" class="btn btn-outline btn-sm">Sign In</a>
+    <a href="signup.html" class="btn btn-primary btn-sm">Sign Up</a>
+  </div>
+</nav>
+<div id="page-add-listing" class="page-section active">
+  <div class="dashboard-layout">
+    <aside class="sidebar">
+      <div class="sidebar-user">
+        <div class="u-avatar">CS</div>
+        <div class="u-name">cseshamim</div>
+        <div class="u-block">📍 Dhanmondi Block 4</div>
+      </div>
+      <nav class="sidebar-nav">
+        <a href="dashboard.html"><span class="icon">🏠</span> Home</a>
+        <a href="browse.html"><span class="icon">🔍</span> Browse Items</a>
+        <a href="my-items.html"><span class="icon">📋</span> My Items</a>
+        <a href="my-rentals.html"><span class="icon">📂</span> My Rentals</a>
+        <a href="messages.html"><span class="icon">💬</span> Messages</a>
+        <div class="u-inline-037"></div>
+        <a href="neighborrent.html" class="logout"><span class="icon">🚪</span> Logout</a>
+      </nav>
+    </aside>
+    <main class="dash-main">
+      <div class="dash-welcome u-inline-050">Add New Listing</div>
+      <div class="listing-card">
+        <h2>Item Details</h2>
+        <p class="sub">Fill in the information below to list your item for rent or resale</p>
+
+        <div class="upload-zone">
+          <div class="upload-icon">📸</div>
+          <p><strong>Drop images here</strong> or click to upload</p>
+          <p class="u-inline-051">Up to 5 images · JPG, PNG · Max 5MB each</p>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label">Item Name</label>
+            <input class="form-input" type="text" placeholder="e.g. Bosch Power Drill Set">
+            <div class="form-hint">Max 100 characters</div>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Category</label>
+            <select class="form-select">
+              <option>Select category…</option>
+              <option>Tools</option><option>Medical Equipment</option><option>Electronics</option>
+              <option>Event Items</option><option>Jewelry</option><option>Cameras</option><option>Other</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Description</label>
+          <textarea class="form-input u-inline-052" rows="3" placeholder="Describe your item condition, included accessories, usage tips…"></textarea>
+          <div class="form-hint">Max 500 characters</div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label">Condition</label>
+            <select class="form-select">
+              <option>New</option><option>Good</option><option>Fair</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Neighborhood Block</label>
+            <input class="form-input u-inline-053" value="Dhanmondi Block 4" disabled>
+            <div class="form-hint">Auto-filled from your profile</div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Listing Type</label>
+          <div class="type-toggle">
+            <div class="type-opt" onclick="toggleType(this)">For Rent</div>
+            <div class="type-opt active" onclick="toggleType(this)">For Sale</div>
+            <div class="type-opt" onclick="toggleType(this)">Both</div>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label">Rent Price / Day (৳)</label>
+            <input class="form-input" type="number" placeholder="150">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Sale Price (৳)</label>
+            <input class="form-input" type="number" placeholder="8500">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Availability Dates</label>
+          <div class="form-row">
+            <input class="form-input" type="date">
+            <input class="form-input" type="date">
+          </div>
+        </div>
+
+        <div class="eco-check form-group">
+          <input type="checkbox" id="eco">
+          <label for="eco">🌿 This is an eco-friendly or upcycled item — list it in the Trending & Sustainable section</label>
+        </div>
+
+        <div class="u-inline-054">
+          <button class="btn btn-primary u-inline-055" onclick="location.href='my-items.html'">✅ Submit Listing</button>
+          <button class="btn btn-outline" onclick="location.href='my-items.html'">Cancel</button>
+        </div>
+      </div>
+    </main>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════
+     PAGE: MESSAGES
+══════════════════════════════════════════ -->
+<script src="scripts.js"></script>
+</body>
+</html>

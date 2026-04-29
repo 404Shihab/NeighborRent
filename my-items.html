@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NeighborRent – Dhaka Rental & Resale Platform</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<nav class="topbar">
+  <a href="neighborrent.html" class="logo">
+    <div class="logo-icon">
+      <svg viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+    </div>
+    <span class="logo-text">Neighbor<span>Rent</span></span>
+  </a>
+  <div class="nav-links" id="nav-public">
+    <a href="browse.html" class="nav-link">Browse</a>
+    <a href="trending.html" class="nav-link">Trending 🌿</a>
+    <a href="#" class="nav-link">How it Works</a>
+  </div>
+  <div class="nav-right" id="nav-right-public">
+    <a href="signin.html" class="btn btn-outline btn-sm">Sign In</a>
+    <a href="signup.html" class="btn btn-primary btn-sm">Sign Up</a>
+  </div>
+</nav>
+<div id="page-my-items" class="page-section active">
+  <div class="dashboard-layout">
+    <aside class="sidebar">
+      <div class="sidebar-user">
+        <div class="u-avatar">CS</div>
+        <div class="u-name">cseshamim</div>
+        <div class="u-block">📍 Dhanmondi Block 4</div>
+      </div>
+      <nav class="sidebar-nav">
+        <a href="dashboard.html"><span class="icon">🏠</span> Home</a>
+        <a href="browse.html"><span class="icon">🔍</span> Browse Items</a>
+        <a href="#" class="active" ><span class="icon">📋</span> My Items</a>
+        <a href="my-rentals.html"><span class="icon">📂</span> My Rentals</a>
+        <a href="messages.html"><span class="icon">💬</span> Messages</a>
+        <a href="trending.html"><span class="icon">🌿</span> Trending</a>
+        <div class="u-inline-037"></div>
+        <a href="#"><span class="icon">👤</span> View Profile</a>
+        <a href="#"><span class="icon">✏️</span> Edit Profile</a>
+        <a href="neighborrent.html" class="logout"><span class="icon">🚪</span> Logout</a>
+      </nav>
+    </aside>
+    <main class="dash-main">
+      <div class="flex-between mb-3">
+        <div>
+          <div class="dash-welcome">My Items</div>
+          <div class="dash-sub">Manage your listings</div>
+        </div>
+        <button class="btn btn-primary" onclick="location.href='add-listing.html'">➕ Add New Item</button>
+      </div>
+      <div class="table-card">
+        <div class="table-header">
+          <h2>All Listings (7)</h2>
+          <input class="search-input u-inline-047" type="text" placeholder="Filter items…">
+        </div>
+        <table>
+          <thead>
+            <tr>
+              <th>Item</th>
+              <th>Category</th>
+              <th>Type</th>
+              <th>Price</th>
+              <th>Status</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><div class="u-inline-048"><div class="thumb">🔧</div><span class="fw-6">Bosch Power Drill</span></div></td>
+              <td>Tools</td><td>Rent</td><td>৳150/day</td>
+              <td><span class="status-pill s-rented">Rented</span></td>
+              <td><a class="action-link">Edit</a> · <a class="action-link">Unavailable</a> · <a class="action-link del">Delete</a></td>
+            </tr>
+            <tr>
+              <td><div class="u-inline-048"><div class="thumb">📷</div><span class="fw-6">Sony A7III Camera</span></div></td>
+              <td>Camera</td><td>Rent & Sell</td><td>৳600/day</td>
+              <td><span class="status-pill s-available">Available</span></td>
+              <td><a class="action-link">Edit</a> · <a class="action-link">Unavailable</a> · <a class="action-link del">Delete</a></td>
+            </tr>
+            <tr>
+              <td><div class="u-inline-048"><div class="thumb">🎥</div><span class="fw-6">Projector 120"</span></div></td>
+              <td>Events</td><td>Rent</td><td>৳800/day</td>
+              <td><span class="status-pill s-available">Available</span></td>
+              <td><a class="action-link">Edit</a> · <a class="action-link">Unavailable</a> · <a class="action-link del">Delete</a></td>
+            </tr>
+            <tr>
+              <td><div class="u-inline-048"><div class="thumb">💍</div><span class="fw-6">Gold Necklace Set</span></div></td>
+              <td>Jewelry</td><td>Sell</td><td>৳25,000</td>
+              <td><span class="status-pill s-sold">Sold</span></td>
+              <td><span class="u-inline-049">Completed</span></td>
+            </tr>
+            <tr>
+              <td><div class="u-inline-048"><div class="thumb">🩺</div><span class="fw-6">Foldable Wheelchair</span></div></td>
+              <td>Medical</td><td>Rent</td><td>৳200/day</td>
+              <td><span class="status-pill s-available">Available</span></td>
+              <td><a class="action-link">Edit</a> · <a class="action-link">Unavailable</a> · <a class="action-link del">Delete</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════
+     PAGE: ADD LISTING
+══════════════════════════════════════════ -->
+<script src="scripts.js"></script>
+</body>
+</html>

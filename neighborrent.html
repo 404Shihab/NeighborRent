@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NeighborRent – Dhaka Rental & Resale Platform</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<nav class="topbar">
+  <a href="neighborrent.html" class="logo">
+    <div class="logo-icon">
+      <svg viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+    </div>
+    <span class="logo-text">Neighbor<span>Rent</span></span>
+  </a>
+  <div class="nav-links" id="nav-public">
+    <a href="browse.html" class="nav-link">Browse</a>
+    <a href="trending.html" class="nav-link">Trending</a>
+    <a href="#" class="nav-link">How it Works</a>
+  </div>
+  <div class="nav-right" id="nav-right-public">
+    <a href="signin.html" class="btn btn-outline btn-sm">Sign In</a>
+    <a href="signup.html" class="btn btn-primary btn-sm">Sign Up</a>
+  </div>
+</nav>
+<div id="page-home" class="page-section active">
+  <!-- Hero -->
+  <div class="hero">
+    <div class="hero-badge">📍 Dhaka's Neighborhood Marketplace</div>
+    <h1>Rent. Resell. Reuse.<br>Right in Your Block.</h1>
+    
+    <div class="hero-actions">
+      <a href="browse.html" class="btn hero btn-white">Browse Items</a>
+      <a href="signup.html" class="btn hero btn-ghost">List Your Item</a>
+    </div>
+  </div>
+
+  <!-- Category Bar -->
+  <div class="category-bar">
+    <div class="inner">
+      <div class="cat-pill active"><span class="icon"></span> Tools</div>
+      <div class="cat-pill"><span class="icon"></span> Medical</div>
+      <div class="cat-pill"><span class="icon"></span> Cameras</div>
+      <div class="cat-pill"><span class="icon"></span> Electronics</div>
+      <div class="cat-pill"><span class="icon"></span> Events</div>
+      <div class="cat-pill"><span class="icon"></span> Jewelry</div>
+      <div class="cat-pill"><span class="icon"></span> Other</div>
+    </div>
+  </div>
+
+  <!-- Featured Items -->
+  <div class="container u-inline-001">
+    <div class="flex-between mb-2">
+      <h2 class="u-inline-002">Popular Near You</h2>
+      <a href="browse.html" class="text-green u-inline-003">See all →</a>
+    </div>
+    <div class="cards-grid">
+      <div class="item-card" onclick="location.href='item-detail.html'">
+        <div class="card-img"> <img src="./assets/machine.webp" alt=""> </div>
+        <div class="card-body">
+          <div class="card-meta"><span class="card-cat">Tools</span></div>
+          <div class="card-name">Bosch Power Drill Set</div>
+          <div class="card-block">📍 Dhanmondi Block 4</div>
+          <div class="card-price">৳150 <span>/ day</span></div>
+          <div class="card-actions">
+            <button class="btn-rent">Rent Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="item-card" onclick="location.href='item-detail.html'">
+        <div class="card-img">📷</div>
+        <div class="card-body">
+          <div class="card-meta"><span class="card-cat">Camera</span><span class="eco-badge">Eco</span></div>
+          <div class="card-name">Sony A7III + 50mm Lens</div>
+          <div class="card-block">📍 Gulshan Block 2</div>
+          <div class="card-price">৳600 <span>/ day</span></div>
+          <div class="card-actions">
+            <button class="btn-rent">Rent Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="item-card" onclick="location.href='item-detail.html'">
+        <div class="card-img">🩺</div>
+        <div class="card-body">
+          <div class="card-meta"><span class="card-cat">Medical</span></div>
+          <div class="card-name">Wheelchair (Foldable)</div>
+          <div class="card-block">📍 Mirpur Block 10</div>
+          <div class="card-price">৳200 <span>/ day</span></div>
+          <div class="card-actions">
+            <button class="btn-rent">Rent Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="item-card" onclick="location.href='item-detail.html'">
+        <div class="card-img">🎥</div>
+        <div class="card-body">
+          <div class="card-meta"><span class="card-cat">Events</span><span class="eco-badge">🌿 Eco</span></div>
+          <div class="card-name">Projector + Screen 120"</div>
+          <div class="card-block">📍 Uttara Sector 7</div>
+          <div class="card-price">৳800 <span>/ day</span></div>
+          <div class="card-actions">
+            <button class="btn-rent">Rent Now</button>
+            <button class="btn-buy">Buy</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Eco Banner -->
+
+  </div>
+
+  <footer>
+    <p>Copyright © NeighborRent 2026 &nbsp;·&nbsp;
+      <a href="#">About</a><a href="#">Terms & Conditions</a><a href="#">Privacy Policy</a><a href="#">Contact Us</a>
+    </p>
+  </footer>
+</div>
+
+<!-- ══════════════════════════════════════════
+     PAGE: BROWSE
+══════════════════════════════════════════ -->
+<script src="scripts.js"></script>
+</body>
+</html>
