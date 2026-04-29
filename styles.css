@@ -33,7 +33,6 @@
 }
 
 body {
-  font-family: "DM Sans", sans-serif;
   background: var(--sand);
   color: var(--ink);
   font-size: 15px;
@@ -78,7 +77,6 @@ body {
 }
 
 .logo-text {
-  font-family: "Playfair Display", serif;
   font-size: 19px;
   font-weight: 600;
   color: var(--ink);
@@ -159,7 +157,6 @@ body {
   font-weight: 500;
   cursor: pointer;
   transition: all 0.15s;
-  font-family: inherit;
   text-decoration: none;
   border: none;
 }
@@ -253,7 +250,6 @@ body {
 }
 
 .hero h1 {
-  font-family: "Playfair Display", serif;
   font-size: 52px;
   font-weight: 600;
   color: white;
@@ -321,7 +317,6 @@ body {
   font-size: 28px;
   font-weight: 600;
   color: white;
-  font-family: "Playfair Display", serif;
 }
 
 .hero-stat .lbl {
@@ -441,7 +436,6 @@ body {
   padding: 11px 16px;
   border-radius: var(--radius-sm);
   border: 1px solid var(--sand-dark);
-  font-family: inherit;
   font-size: 14px;
   background: var(--white);
   color: var(--ink);
@@ -521,12 +515,12 @@ body {
   font-weight: 600;
   font-size: 14.5px;
   margin-bottom: 4px;
-  color: var(--ink);
+  color: #fff;
 }
 
 .card-block {
   font-size: 12px;
-  color: var(--ink-muted);
+  color: #fff;
   display: flex;
   align-items: center;
   gap: 4px;
@@ -561,7 +555,6 @@ body {
   font-size: 13px;
   font-weight: 500;
   cursor: pointer;
-  font-family: inherit;
   transition: background 0.15s;
 }
 
@@ -579,7 +572,6 @@ body {
   font-size: 13px;
   font-weight: 500;
   cursor: pointer;
-  font-family: inherit;
   transition: background 0.15s;
 }
 
@@ -615,7 +607,6 @@ body {
 }
 
 .auth-title {
-  font-family: "Playfair Display", serif;
   font-size: 26px;
   font-weight: 600;
   margin-bottom: 6px;
@@ -644,7 +635,6 @@ body {
   padding: 11px 14px;
   border-radius: var(--radius-sm);
   border: 1px solid var(--sand-dark);
-  font-family: inherit;
   font-size: 14px;
   color: var(--ink);
   background: var(--white);
@@ -662,7 +652,6 @@ body {
   padding: 11px 14px;
   border-radius: var(--radius-sm);
   border: 1px solid var(--sand-dark);
-  font-family: inherit;
   font-size: 14px;
   color: var(--ink);
   background: var(--white);
@@ -815,7 +804,6 @@ body {
 }
 
 .dash-welcome {
-  font-family: "Playfair Display", serif;
   font-size: 24px;
   font-weight: 600;
   color: var(--ink);
@@ -854,7 +842,6 @@ body {
 .stat-card .stat-num {
   font-size: 30px;
   font-weight: 700;
-  font-family: "Playfair Display", serif;
   color: var(--ink);
 }
 
@@ -1092,6 +1079,9 @@ tr:hover td {
   cursor: pointer;
   border: 2px solid transparent;
 }
+.gallery-thumb img {
+  width: 100%;
+}
 
 .gallery-thumb.active {
   border-color: var(--green);
@@ -1111,7 +1101,6 @@ tr:hover td {
 }
 
 .detail-name {
-  font-family: "Playfair Display", serif;
   font-size: 26px;
   font-weight: 600;
   color: var(--ink);
@@ -1232,7 +1221,6 @@ tr:hover td {
 }
 
 .listing-card h2 {
-  font-family: "Playfair Display", serif;
   font-size: 22px;
   font-weight: 600;
   margin-bottom: 4px;
@@ -1515,7 +1503,6 @@ tr:hover td {
   padding: 10px 14px;
   border-radius: 99px;
   border: 1px solid var(--sand-dark);
-  font-family: inherit;
   font-size: 14px;
   background: var(--sand);
   outline: none;
@@ -1557,7 +1544,6 @@ tr:hover td {
 }
 
 .trending-hero h2 {
-  font-family: "Playfair Display", serif;
   font-size: 28px;
   font-weight: 600;
   margin-bottom: 8px;
@@ -1668,7 +1654,6 @@ tr:hover td {
 }
 
 .page-header h1 {
-  font-family: "Playfair Display", serif;
   font-size: 22px;
   font-weight: 600;
 }
@@ -1833,7 +1818,6 @@ footer a:hover {
 }
 
 .u-inline-002 {
-  font-family: "Playfair Display", serif;
   font-size: 22px;
   font-weight: 600;
 }
@@ -1865,7 +1849,6 @@ footer a:hover {
 }
 
 .u-inline-006 {
-  font-family: "Playfair Display", serif;
   font-size: 22px;
   font-weight: 600;
   color: white;
@@ -1909,7 +1892,6 @@ footer a:hover {
   border-radius: var(--radius-sm);
   background: white;
   color: var(--ink);
-  font-family: inherit;
 }
 
 .u-inline-013 {
